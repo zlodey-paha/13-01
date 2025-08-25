@@ -34,7 +34,7 @@
 53/domain
 80/http
 ```
-![SERVICE]()
+![SERVICE](https://github.com/zlodey-paha/13-01/blob/main/13-01/Service.PNG)
 
 - Какие уязвимости были вами обнаружены? (список со ссылками: достаточно трёх уязвимостей)
 ```
@@ -61,12 +61,12 @@ SMTP (https://www.exploit-db.com/exploits/48185)
 #### Решение 2
 
 SYN сканирование - отправляются SYN пакеты, если возвращается SYN-ACK - порт открыт, RST - порт закрыт, если ответа нет, порт защищен фаерволом.
-![SYN]()
+![SYN](https://github.com/zlodey-paha/13-01/blob/main/13-01/SYN.PNG)
 FIN сканирование - отправляются пакеты с флагом FIN, открытые порты игнорируют такие пакеты, закрытые порты отвечают с флагом RST
-![FIN]()
+![FIN](https://github.com/zlodey-paha/13-01/blob/main/13-01/FIN.PNG)
 Xmas сканирование - отправляются пакеты с флагами FIN, URG, PSH, открытые порты игнорируют такие пакеты, закрытые порты отвечают с флагом RST
-![Xmas]()
+![Xmas](https://github.com/zlodey-paha/13-01/blob/main/13-01/Xmas.PNG)
 UDP сканирование - отправляются пустые пакеты на UDP порты, открытые порты или защищеные ничего не отвечают, закрытые - Unreachable
-![UDP]()
+![UDP](https://github.com/zlodey-paha/13-01/blob/main/13-01/UDP.PNG)
 
 ------
